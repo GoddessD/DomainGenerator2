@@ -5,7 +5,10 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+var pronoun = ["the", "he", "she"];
+var adj = ["great", "big", "amazing"];
+var noun = ["dog", "jogger", "driver"];
+for (var i = 0; i < pronoun.length; i++)
+  for (var j = 0; j < adj.length; j++)
+    for (var k = 0; k < noun.length; k++)
+      console.log(pronoun[i] + adj[i] + noun[i] + ".com");
